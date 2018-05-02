@@ -1,0 +1,383 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Cookie|Heebo');
+/* font-family: 'Heebo', sans-serif;
+font-family: 'Cookie', cursive; */
+
+body {
+	font-family: 'Heebo', sans-serif;
+	font-size: 1.5vw;
+	margin: 0;
+	padding: 0;
+	color: #000000;
+	font-weight: 400;
+	height: auto;
+}
+
+body a, a:visited {
+	color: #B7833E;
+	text-decoration: none;
+	font-weight: bold;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+body a:hover {
+	opacity: .5;
+}
+
+#header {
+	width: 100%;
+	height: 60px;
+	background-color: #F7C1BB;
+	color: #353A47;
+}
+
+#header h1 {
+	font-size: 26px;
+	margin: 0;
+}
+
+#title {
+	float: left;
+	padding: 10px 0 0 40px;
+}
+
+#navigation {
+	float: right;
+	text-align: right;
+	padding: 18px 40px 0 0;
+	font-size: 16px;
+}
+
+#navigation a, a:visited {
+	color: #041F35;
+	text-decoration: none;
+	font-weight: bold;
+	-o-transition:.5s;
+	-ms-transition:.5s;
+	-moz-transition:.5s;
+	-webkit-transition:.5s;
+	transition:.5s;
+}
+
+#navigation a:hover {
+	opacity: .5;
+}
+
+#navigation span {
+	padding: 0 20px 0 0;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#summaryBackground {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background-color: #353A47;
+}
+
+#summary {
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+	width: 90%;
+	height: 70%;
+	background-color: #FFFFFF;
+}
+
+#portrait {
+	float: left;
+	padding: 30px 20px;
+}
+
+#text {
+	position: relative;
+	margin: 30px;
+	font-size: 14.5px;
+	overflow: hidden;
+}
+
+#text h1 {
+	font-size: 34px;
+	padding: 0;
+	margin: 0;
+}
+
+#text h2 {
+	font-family: 'Cookie', serif;
+	color: #B7833E;
+	font-size: 28px;
+	font-weight: 400;
+	padding: 0;
+	margin: -10px 0 10px 0;
+}
+
+#text img {
+	margin: 10px 5px -5px 0;
+}
+
+#projects {
+	width: 70%;
+	margin: 0 auto;
+	font-size: 1.2vw;
+}
+
+#projects h1 {
+	text-align: center;
+	font-size: 3.5vw;
+	padding-top: 25px;
+	padding-bottom: 15px;
+}
+
+#projects img {
+	float: left;
+	width: 55%;
+	padding-right: 30px;
+	padding-bottom: 70px;
+}
+
+#projects .text {
+	position: relative;
+	padding: 10px;
+	font-size: 1.6vw;
+}
+
+#footer {
+	width: 100%;
+	height: 130px;
+	bottom: 0;
+	padding-top: 80px;
+	background-color: #353A47;
+	color: #FFFFFF;
+	footer: 1.5vw;
+}
+
+#footer .textLeft {
+	padding-left: 50px;
+	float: left;
+}
+
+#footer .textRight {
+	padding-right: 50px;
+	float: right;
+}
+
+/* -------------- */
+/* about me page */
+/* -------------- */
+
+.about {
+	margin: auto;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.about h1 {
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+.about div {
+	background-color: #EFEFEF;
+	padding: 20px;
+	margin: 50px;
+}
+
+.about img {
+	width: 100%;
+}
+
+.about #aboutme {
+	width: 40%;
+}
+
+.about #sdsu {
+	margin: auto;
+	 width: 40%;
+}
+
+.about #likesDislikes {
+	width: 50%;
+	line-height: 50px;
+	text-align: center;
+	font-size: 1.6vw;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#likes {
+	margin: 0;
+	padding: 0;
+	padding-right: 40px;
+}
+
+#dislikes {
+	margin: 0;
+	padding: 0;
+	padding-left: 40px;
+}
+
+/* -------------- */
+/* projects page */
+/* -------------- */
+#projectsTitle {
+	text-align: center;
+	font-size: 2vw;
+}
+
+
+.project {
+	margin: auto;
+	width: 90%;
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.project .aboutProject {
+	background-color: #EFEFEF;
+	padding: 20px;
+	margin: 30px;
+	width: 35%;
+}
+
+.project h1 {
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+.project .projectPicture{
+	width: 40%;
+	margin: 30px;
+	padding: 20px;
+}
+
+.projectPicture img {
+	width: 100%;
+}
+
+
+
+/* -------- */
+/* smaller screen widths */
+/* -------- */
+
+@media only screen and (max-width: 1050px) {
+	.about {
+		flex-wrap: wrap;
+		font-size: 2vw;
+	}
+
+	.about #aboutme {
+		width: 70%;
+	}
+
+	.about #sdsu {
+		margin: auto;
+	 	width: 70%;
+	}
+
+	#likes {
+		padding: 20px;
+		font-size: 2.2vw;
+	}
+
+	#dislikes {
+		padding: 20px;
+		font-size: 2.2vw;
+	}
+
+	#projectsTitle {
+		text-align: center;
+		font-size: 3vw;
+	}
+
+	.project {
+		font-size: 2vw;
+	}
+
+	.project .aboutProject {
+		background-color: #EFEFEF;
+		padding: 20px;
+		margin: 30px;
+		width: 80%;
+	}
+
+	.project h1 {
+		margin: 0;
+		padding-bottom: 20px;
+	}
+
+	.project .projectPicture{
+		width: 90%;
+		margin: 30px;
+		padding: 20px;
+	}
+
+	.projectPicture img {
+		width: 100%;
+	}
+
+	#footer {
+		font-size: 2vw;
+	}
+
+}
+
+@media only screen and (max-width: 700px) {
+	body {
+		font-size: 2vw;
+	}
+
+	#header {
+		font-size: .8vw;
+	}
+
+	#navigation {
+		float: right;
+		text-align: right;
+		padding: 15px 10px 0 0;
+	}
+
+	#likes {
+		padding: 20px;
+	}
+
+	#dislikes {
+		padding: 20px;
+	}
+
+	.project .aboutProject {
+		font-size: 3vw;
+	}
+
+
+	#footer {
+		font-size: 3vw;
+		text-align: center;
+	}
+
+	#footer .textLeft {
+		float: none;
+	}
+
+	#footer .textRight {
+		text-align: center;
+		float: none;
+		padding-left: 60px;
+	}
+}
